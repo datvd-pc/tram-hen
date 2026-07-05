@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="none">
+  <!-- Heart shape with location pin merged -->
+  <path d="M50 108C50 108 10 68 10 42C10 22 26 8 42 8C46.5 8 50 10 50 10C50 10 53.5 8 58 8C74 8 90 22 90 42C90 68 50 108 50 108Z" fill="#6a2d35"/>
+  <!-- Inner heart cutout -->
+  <path d="M50 90C50 90 25 60 25 42C25 30 34 20 42 20C46 20 49 23 50 25C51 23 54 20 58 20C66 20 75 30 75 42C75 60 50 90 50 90Z" fill="white"/>
+  <!-- Small heart inside -->
+  <path d="M50 72C50 72 36 56 36 46C36 39 41 34 46 34C48 34 49.5 36 50 37C50.5 36 52 34 54 34C59 34 64 39 64 46C64 56 50 72 50 72Z" fill="#6a2d35"/>
+</svg>

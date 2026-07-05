@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi — Trạm Hẹn Hò</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="/" class="logo">
+            <img src="/static/uploads/primary_logo.png" alt="Dating Station" class="logo-icon-img">
+            <span class="logo-text">Dating Station</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/events">Sự kiện</a></li>
+            <li><a href="/members">Thành viên</a></li>
+            <li><a href="/about">Về chúng tôi</a></li>
+            <li><a href="/blog">Câu chuyện</a></li>
+            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank">Đăng nhập</a></li>
+            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đăng ký</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var path = window.location.pathname;
+        var links = document.querySelectorAll('.nav-links a');
+        links.forEach(function(link) {
+            if (path === '/' && link.getAttribute('href') === '/') {
+                link.classList.add('active');
+            } else if (link.getAttribute('href') !== '/' && path.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+    <div class="page-content">
+        <section class="cta-section" style="padding:7rem 0 3.5rem;">
+            <div class="container" style="text-align:center;">
+                <h1 style="font-family:var(--font-display); font-size:2.5rem; font-weight:800; color:var(--text-primary);">Về Chúng Tôi</h1>
+                <p style="color:var(--text-secondary);">Câu chuyện đằng sau Trạm Hẹn Hò</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="max-width:800px; margin:0 auto;">
+                    <div class="section-header">
+                        <span class="section-badge">💕 Câu chuyện của chúng tôi</span>
+                        <h2 class="section-title">Brand Story <span class="highlight">"Tôi là ai?"</span></h2>
+                    </div>
+                    <div class="card" style="padding:2.5rem; margin-bottom:2rem;">
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); font-style: italic; border-left: 4px solid #ff4d6d; padding-left: 1rem; margin-bottom: 2rem;">
+                            “Dự án được khởi xướng bởi những con người sống tại Đà Lạt, yêu Đà Lạt và muốn góp phần gìn giữ tinh thần lãng mạn của thành phố này. Chúng tôi mong muốn mỗi cuộc gặp gỡ tại Trạm Hẹn Hò đều trở thành một kỷ niệm đẹp gắn liền với Đà Lạt – thành phố của tình yêu và những khởi đầu mới.”
+                        </p>
+                        <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Tôi không phải là một ứng dụng hẹn hò.</h3>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Tôi cũng không phải là một buổi mai mối. Tôi là <strong>Trạm Hẹn Hò</strong> — một nơi dừng chân, dành cho những người đang trên hành trình tìm kiếm một kết nối thật.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Tôi được sinh ra từ một câu hỏi rất đơn giản:
+                            <em>“Tại sao chúng ta có thể nói chuyện với hàng trăm người mỗi ngày, nhưng lại khó gặp được một người thực sự phù hợp?”</em>
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Chúng ta swipe rất nhiều.
+                            Chúng ta chat rất lâu.
+                            Nhưng rồi…
+                            những cuộc trò chuyện dần nhạt đi,
+                            những cuộc gặp gỡ trở nên gượng gạo,
+                            và niềm tin vào tình yêu cũng mỏng dần.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Tôi không muốn bạn phải “tìm kiếm” thêm nữa.
+                            Tôi muốn bạn gặp gỡ.
+                            Gặp một người bằng ánh mắt, bằng giọng nói, bằng năng lượng thật — không qua màn hình.
+                        </p>
+                        <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Nơi tình yêu bắt đầu</h3>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Tôi được tạo ra tại Đà Lạt. Một thành phố mà người ta vẫn gọi là “Thành phố của tình yêu.” Nhưng chúng tôi nhận ra một điều: Đà Lạt có rất nhiều nơi để chụp ảnh tình yêu, nhưng lại thiếu những nơi để tình yêu thực sự bắt đầu. Và đó là lý do Trạm Hẹn Hò ra đời.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Tôi không hứa sẽ giúp bạn tìm được người yêu. Nhưng tôi hứa:
+                            • Bạn sẽ gặp những con người thật.
+                            • Trong một không gian an toàn.
+                            • Với những cuộc trò chuyện có ý nghĩa.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Không cần phải cố gắng gây ấn tượng.
+                            Không cần phải “diễn”.
+                            Chỉ cần bạn là bạn.
+                        </p>
+                        <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Mọi thứ đều có lý do</h3>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Ở Trạm Hẹn Hò, mọi thứ đều có lý do.
+                            Việc bạn ẩn danh → để bạn thoải mái hơn.
+                            Việc không trao contact tại chỗ → để giữ sự tinh tế.
+                            Việc chọn match sau → để bạn lắng nghe cảm xúc thật của mình.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Chúng tôi không tạo ra sự vội vàng. Chúng tôi tạo ra những khoảnh khắc đủ chậm để bạn cảm nhận.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Và nếu bạn hỏi: <em>“Trạm Hẹn Hò thực sự là gì?”</em>
+                            Thì câu trả lời là: Là một nơi mà hai người xa lạ có thể bắt đầu một câu chuyện.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Còn nếu bạn hỏi: <em>“Điều gì sẽ xảy ra sau đó?”</em>
+                            Chúng tôi không biết. Có thể là:
+                            Một buổi cà phê thứ hai.
+                            Một chuyến đi cùng nhau.
+                            Hoặc một câu chuyện chỉ dừng lại ở đó.
+                        </p>
+                        <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                            Nhưng ít nhất… đó là một cuộc gặp gỡ thật.
+                            Và đôi khi, tình yêu không bắt đầu từ một điều gì lớn lao. Nó bắt đầu từ một buổi tối, một cuộc trò chuyện, và một nơi gọi là:
+                            <strong style="font-family:var(--font-display); font-size:1.5rem; color:#ff4d6d;">Trạm Hẹn Hò.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top:4rem;">
+                    <span class="section-badge">✨ Tại sao chọn chúng tôi</span>
+                    <h2 class="section-title">Điểm Khác Biệt</h2>
+                </div>
+
+                <div class="grid-4">
+                    <div class="card" style="text-align:center; padding:2rem;">
+                        <div style="font-size:2.5rem; margin-bottom:1rem;">🤝</div>
+                        <h3 style="margin-bottom:0.5rem;">Gặp gỡ thực</h3>
+                        <p style="color:var(--text-muted); font-size:0.88rem;">Hẹn hò trực tiếp, không qua màn hình</p>
+                    </div>
+                    <div class="card" style="text-align:center; padding:2rem;">
+                        <div style="font-size:2.5rem; margin-bottom:1rem;">🧠</div>
+                        <h3 style="margin-bottom:0.5rem;">AI thông minh</h3>
+                        <p style="color:var(--text-muted); font-size:0.88rem;">Phân tích hồ sơ, gợi ý match tốt nhất</p>
+                    </div>
+                    <div class="card" style="text-align:center; padding:2rem;">
+                        <div style="font-size:2.5rem; margin-bottom:1rem;">🔒</div>
+                        <h3 style="margin-bottom:0.5rem;">Bảo mật cao</h3>
+                        <p style="color:var(--text-muted); font-size:0.88rem;">KYC xác thực, HTTPS mã hóa</p>
+                    </div>
+                    <div class="card" style="text-align:center; padding:2rem;">
+                        <div style="font-size:2.5rem; margin-bottom:1rem;">💝</div>
+                        <h3 style="margin-bottom:0.5rem;">Kết quả thực</h3>
+                        <p style="color:var(--text-muted); font-size:0.88rem;">Hàng trăm cặp đôi thành công</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content" style="text-align:center;">
+            <span>💕</span>
+            <span>© 2026 Dating Station. Giữa triệu người, ta tìm thấy nhau ở Trạm ♡</span>
+            <span>💕</span>
+        </div>
+    </div>
+</footer>
+<div class="toast-container" id="toast-container"></div>
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạm Hẹn Hò — Tìm Nửa Kia Hoàn Hảo | datingstation.vn</title>
+    <meta name="description" content="Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Ghép đôi thông minh với thuật toán Gale-Shapley. Gặp gỡ trực tiếp, 100% xác thực.">
+    <meta property="og:title" content="Trạm Hẹn Hò — Tìm Nửa Kia Hoàn Hảo | datingstation.vn">
+    <meta property="og:description" content="Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Ghép đôi thông minh với thuật toán Gale-Shapley. Gặp gỡ trực tiếp, 100% xác thực.">
+    <meta property="og:image" content="/static/images/hero-event.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datingstation.vn">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="/" class="logo">
+            <img src="/static/uploads/primary_logo.png" alt="Dating Station" class="logo-icon-img">
+            <span class="logo-text">Dating Station</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/events">Sự kiện</a></li>
+            <li><a href="/members">Thành viên</a></li>
+            <li><a href="/about">Về chúng tôi</a></li>
+            <li><a href="/blog">Câu chuyện</a></li>
+            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank">Đăng nhập</a></li>
+            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đăng ký</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var path = window.location.pathname;
+        var links = document.querySelectorAll('.nav-links a');
+        links.forEach(function(link) {
+            if (path === '/' && link.getAttribute('href') === '/') {
+                link.classList.add('active');
+            } else if (link.getAttribute('href') !== '/' && path.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+    <div class="page-content">
+        <section class="hero-wow glass-hero">
+            <div class="hero-wow-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+            <div class="container hero-wow-container">
+                <div class="hero-wow-content">
+                    <div class="hero-wow-badge-top">✨ Nền tảng hẹn hò tốc độ số 1 VN</div>
+                    <h1 class="hero-wow-title">
+                        <p>Tìm </p><p>Nửa Kia</p><p> Hoàn Hảo</p>
+                    </h1>
+                    <p class="hero-wow-desc">
+                        Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Gặp gỡ trực tiếp, trò chuyện thú vị và để thuật toán AI tìm ra match hoàn hảo cho bạn.
+                    </p>
+                    <div class="hero-wow-actions">
+                        <a href="/events" class="btn-wow btn-wow-primary">
+                            <span>Xem sự kiện →</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                        </a>
+                        <a href="#how-it-works" class="btn-wow btn-wow-outline">Cách hoạt động ↓</a>
+                    </div>
+                    
+                    <div class="hero-wow-metrics">
+                        <div class="metric-item">
+                            <span class="m-icon">💯</span>
+                            <span>✓ Xác thực 100%</span>
+                        </div>
+                        <div class="metric-sep"></div>
+                        <div class="metric-item">
+                            <span class="m-icon">🛡</span>
+                            <span>⬡ An toàn</span>
+                        </div>
+                        <div class="metric-sep"></div>
+                        <div class="metric-item">
+                            <span class="m-icon">✨</span>
+                            <span>◈ AI ghép đôi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-wow-visual">
+                    <div class="visual-card-main">
+                        <img src="/static/images/hero-event.png" alt="Speed Dating">
+                        <div class="visual-glass-overlay"></div>
+                    </div>
+                    <div class="visual-card-floating">
+                        <div class="floating-avatar-group">
+                            <img src="https://i.pravatar.cc/100?img=1" class="f-avatar av-1">
+                            <img src="https://i.pravatar.cc/100?img=5" class="f-avatar av-2">
+                            <div class="f-avatar av-match">❤️</div>
+                        </div>
+                        <div>
+                            <span>500+ cặp đã match thành công</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll" style="padding:2.5rem 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="grid-4" style="gap:1rem;">
+                    <div class="glass-stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Cặp đã ghép đôi</div>
+                    </div>
+                    <div class="glass-stat">
+                        <div class="stat-number">2,000+</div>
+                        <div class="stat-label">Thành viên</div>
+                    </div>
+                    <div class="glass-stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Sự kiện tổ chức</div>
+                    </div>
+                    <div class="glass-stat">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">Đánh giá trung bình</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll" style="position: relative;">
+            <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:var(--pink-soft); border-radius:50%; filter:blur(40px); z-index:-1;"></div>
+            <div style="position:absolute; bottom:-50px; right:-50px; width:250px; height:250px; background:rgba(140,163,184,0.08); border-radius:50%; filter:blur(50px); z-index:-1;"></div>
+            <div class="container">
+                <div style="max-width:800px; margin:0 auto; position:relative;">
+                    <div class="section-header" style="text-align:center;">
+                        <span class="section-badge" style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow-sm);">💕 Truyền cảm hứng</span>
+                        <h2 class="section-title">Câu chuyện <span class="highlight">"Dating Station"</span></h2>
+                    </div>
+                    <div class="card" style="padding:2.5rem; margin-top:1.5rem; border: 1px solid rgba(106,45,53,0.05);">
+                        <div style="position:absolute; top:20px; left:20px; font-size:4rem; color:var(--pink-100); font-family:var(--font-display); line-height:1; opacity:0.5; pointer-events:none;">"</div>
+                        <div class="rich-content" style="position:relative; z-index:1; max-height:280px; overflow:hidden; mask-image:linear-gradient(to bottom, black 60%, transparent 100%); -webkit-mask-image:linear-gradient(to bottom, black 60%, transparent 100%);">
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); font-style: italic; border-left: 4px solid #ff4d6d; padding-left: 1rem; margin-bottom: 2rem;">
+                                “Dự án được khởi xướng bởi những con người sống tại Đà Lạt, yêu Đà Lạt và muốn góp phần gìn giữ tinh thần lãng mạn của thành phố này. Chúng tôi mong muốn mỗi cuộc gặp gỡ tại Trạm Hẹn Hò đều trở thành một kỷ niệm đẹp gắn liền với Đà Lạt – thành phố của tình yêu và những khởi đầu mới.”
+                            </p>
+                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Tôi không phải là một ứng dụng hẹn hò.</h3>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Tôi cũng không phải là một buổi mai mối. Tôi là <strong>Trạm Hẹn Hò</strong> — một nơi dừng chân, dành cho những người đang trên hành trình tìm kiếm một kết nối thật.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Tôi được sinh ra từ một câu hỏi rất đơn giản:
+                                <em>“Tại sao chúng ta có thể nói chuyện với hàng trăm người mỗi ngày, nhưng lại khó gặp được một người thực sự phù hợp?”</em>
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Chúng ta swipe rất nhiều.
+                                Chúng ta chat rất lâu.
+                                Nhưng rồi…
+                                những cuộc trò chuyện dần nhạt đi,
+                                những cuộc gặp gỡ trở nên gượng gạo,
+                                và niềm tin vào tình yêu cũng mỏng dần.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Tôi không muốn bạn phải “tìm kiếm” thêm nữa.
+                                Tôi muốn bạn gặp gỡ.
+                                Gặp một người bằng ánh mắt, bằng giọng nói, bằng năng lượng thật — không qua màn hình.
+                            </p>
+                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Nơi tình yêu bắt đầu</h3>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Tôi được tạo ra tại Đà Lạt. Một thành phố mà người ta vẫn gọi là “Thành phố của tình yêu.” Nhưng chúng tôi nhận ra một điều: Đà Lạt có rất nhiều nơi để chụp ảnh tình yêu, nhưng lại thiếu những nơi để tình yêu thực sự bắt đầu. Và đó là lý do Trạm Hẹn Hò ra đời.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Tôi không hứa sẽ giúp bạn tìm được người yêu. Nhưng tôi hứa:
+                                • Bạn sẽ gặp những con người thật.
+                                • Trong một không gian an toàn.
+                                • Với những cuộc trò chuyện có ý nghĩa.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Không cần phải cố gắng gây ấn tượng.
+                                Không cần phải “diễn”.
+                                Chỉ cần bạn là bạn.
+                            </p>
+                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Mọi thứ đều có lý do</h3>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Ở Trạm Hẹn Hò, mọi thứ đều có lý do.
+                                Việc bạn ẩn danh → để bạn thoải mái hơn.
+                                Việc không trao contact tại chỗ → để giữ sự tinh tế.
+                                Việc chọn match sau → để bạn lắng nghe cảm xúc thật của mình.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Chúng tôi không tạo ra sự vội vàng. Chúng tôi tạo ra những khoảnh khắc đủ chậm để bạn cảm nhận.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Và nếu bạn hỏi: <em>“Trạm Hẹn Hò thực sự là gì?”</em>
+                                Thì câu trả lời là: Là một nơi mà hai người xa lạ có thể bắt đầu một câu chuyện.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Còn nếu bạn hỏi: <em>“Điều gì sẽ xảy ra sau đó?”</em>
+                                Chúng tôi không biết. Có thể là:
+                                Một buổi cà phê thứ hai.
+                                Một chuyến đi cùng nhau.
+                                Hoặc một câu chuyện chỉ dừng lại ở đó.
+                            </p>
+                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
+                                Nhưng ít nhất… đó là một cuộc gặp gỡ thật.
+                                Và đôi khi, tình yêu không bắt đầu từ một điều gì lớn lao. Nó bắt đầu từ một buổi tối, một cuộc trò chuyện, và một nơi gọi là:
+                                <strong style="font-family:var(--font-display); font-size:1.5rem; color:#ff4d6d;">Trạm Hẹn Hò.</strong>
+                            </p>
+                        </div>
+                        <div style="text-align:center; margin-top: 2.5rem;">
+                            <a href="/about" class="btn btn-outline" style="background:white;">Xem thêm về chúng tôi →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">💡 Cách hoạt động</span>
+                    <h2 class="section-title"><p>Chỉ </p><p>3 Bước</p><p> Đơn Giản</p></h2>
+                    <p class="section-subtitle">Hành trình tìm kiếm nửa kia của bạn bắt đầu từ đây</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><span class="step-icon-inner">🎫</span></div>
+                        <h3>Đặt vé &amp; Thanh toán</h3>
+                        <p>Chọn sự kiện, điền thông tin và thanh toán siêu nhanh</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><span class="step-icon-inner">💬</span></div>
+                        <h3>Gặp gỡ &amp; Bình chọn</h3>
+                        <p>Check-in tại sự kiện, trò chuyện và xếp hạng Top 5 người bạn thích</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><span class="step-icon-inner">🎉</span></div>
+                        <h3>Nhận kết quả ghép đôi</h3>
+                        <p>Thuật toán Gale-Shapley chạy lúc nửa đêm, bạn nhận kết quả vào sáng hôm sau!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">🤖 Công nghệ</span>
+                    <h2 class="section-title"><p>Ghép Đôi </p><p>Thông Minh AI</p></h2>
+                    <p class="section-subtitle">Thuật toán Gale-Shapley + AI phân tích hồ sơ tìm ra match hoàn hảo</p>
+                </div>
+                <div class="ai-showcase-grid">
+                    <div class="feature-image-wrapper">
+                        <img src="/static/images/ai-matching.png" alt="AI Matching Technology" loading="lazy">
+                    </div>
+                    <div>
+                        <div class="ai-feature-card">
+                            <h3>🧠 Thuật toán Nobel Prize</h3>
+                            <p>Gale-Shapley đảm bảo kết quả <strong>stable matching</strong> — không ai muốn đổi partner sau khi match.</p>
+                        </div>
+                        <div class="ai-feature-card">
+                            <h3>🔮 AI Compatibility Score</h3>
+                            <p>Phân tích sở thích, tính cách, lịch sử match để tính điểm tương thích 0-100%.</p>
+                        </div>
+                        <div class="ai-feature-card">
+                            <h3>✅ Anti-Gaming</h3>
+                            <p>Hệ thống chống gian lận — không thể hack kết quả ghép đôi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">🔥 Sắp diễn ra</span>
+                    <h2 class="section-title"><p>Sự Kiện </p><p>Nổi Bật</p></h2>
+                    <p class="section-subtitle">Đăng ký ngay để không bỏ lỡ cơ hội gặp người ấy</p>
+                </div>
+                <div class="grid-3" id="events-grid">
+                    
+                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
+                        <div class="event-cover"><img src="/static/uploads/event1.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
+                        <div class="event-date">
+                            📅 02/05/2026 12:00
+                            <span class="status-badge open">OPEN</span>
+                        </div>
+                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
+                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
+                        <div class="slot-info">
+                            <span class="slot-badge male">👨 15/15 nam</span>
+                            <span class="slot-badge female">👩 15/15 nữ</span>
+                        </div>
+                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
+                            <span class="event-price">990.000 <span>VNĐ</span></span>
+                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
+                        <div class="event-cover"><img src="/static/uploads/blind-dating-dalat-cover.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
+                        <div class="event-date">
+                            📅 01/05/2026 12:00
+                            <span class="status-badge open">OPEN</span>
+                        </div>
+                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
+                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
+                        <div class="slot-info">
+                            <span class="slot-badge male">👨 15/15 nam</span>
+                            <span class="slot-badge female">👩 14/15 nữ</span>
+                        </div>
+                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
+                            <span class="event-price">990.000 <span>VNĐ</span></span>
+                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
+                        <div class="event-cover"><img src="/static/uploads/blind-dating-dalat-cover.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
+                        <div class="event-date">
+                            📅 30/04/2026 15:00
+                            <span class="status-badge open">OPEN</span>
+                        </div>
+                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
+                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
+                        <div class="slot-info">
+                            <span class="slot-badge male">👨 15/15 nam</span>
+                            <span class="slot-badge female">👩 15/15 nữ</span>
+                        </div>
+                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
+                            <span class="event-price">990.000 <span>VNĐ</span></span>
+                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="text-align:center; margin-top:2.5rem;">
+                    <a href="/events" class="btn btn-outline btn-lg">Xem tất cả sự kiện →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">💕 Câu chuyện</span>
+                    <h2 class="section-title"><p>Họ Đã </p><p>Tìm Thấy Nhau</p></h2>
+                    <p class="section-subtitle">Những câu chuyện tình yêu bắt đầu từ Trạm Hẹn Hò</p>
+                </div>
+                <div class="stories-grid">
+                    <div>
+                        <div class="story-card">
+                            <div class="story-icon">💑</div>
+                            <p class="story-quote">"Mình gặp anh ấy tại sự kiện Speed Dating tháng 12. Chỉ 5 phút trò chuyện mà biết ngay đây là người mình tìm kiếm. Thuật toán cũng match chúng mình lại!"</p>
+                            <p class="story-author">— Hà &amp; Minh, match từ Event #8</p>
+                        </div>
+                        <div class="story-card">
+                            <div class="story-icon">👫</div>
+                            <p class="story-quote">"Đã đi 3 sự kiện mới tìm được người hợp. Cảm ơn đội ngũ Trạm Hẹn Hò đã tổ chức chuyên nghiệp quá!"</p>
+                            <p class="story-author">— Linh &amp; Tuấn, match từ Event #15</p>
+                        </div>
+                    </div>
+                    <div class="feature-image-wrapper">
+                        <img src="/static/images/couple-success.png" alt="Cặp đôi thành công" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">⭐ Tính năng</span>
+                    <h2 class="section-title"><p>Tại Sao Chọn </p><p>Trạm Hẹn Hò?</p></h2>
+                    <p class="section-subtitle">Được tin tưởng bởi hàng ngàn người dùng tại Việt Nam</p>
+                </div>
+                <div class="grid-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Ghép đôi thông minh</h3>
+                        <p>Thuật toán Gale-Shapley đảm bảo kết quả tối ưu nhất</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>An toàn tuyệt đối</h3>
+                        <p>KYC xác thực danh tính, bảo vệ thông tin cá nhân</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Tốc độ &amp; Tiện lợi</h3>
+                        <p>Đặt vé 30 giây, điền thông tin siêu nhanh</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💯</div>
+                        <h3>Cam kết chất lượng</h3>
+                        <p>Sự kiện cao cấp, không gian sang trọng, đội ngũ chuyên nghiệp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll">
+            <div class="container" style="text-align:center;">
+                <h2 class="cta-title">Sẵn Sàng Tìm Nửa Kia?</h2>
+                <p class="cta-subtitle">Đăng ký thông tin nhận tư vấn ngay hôm nay. Sự kiện tiếp theo đang chờ bạn!</p>
+                <div class="cta-actions">
+                    <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-lg">🚀 Đăng ký ngay</a>
+                    <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-outline btn-lg">Liên hệ chúng tôi</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content" style="text-align:center;">
+            <span>💕</span>
+            <span>© 2026 Dating Station. Giữa triệu người, ta tìm thấy nhau ở Trạm ♡</span>
+            <span>💕</span>
+        </div>
+    </div>
+</footer>
+<div class="toast-container" id="toast-container"></div>
+<script src="/static/js/app.js"></script>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <div class="chat-header-avatar">🤖</div>
+                <div class="chat-header-info">
+                    <h4>Trợ lý Trạm Hẹn Hò</h4>
+                    <p>Luôn sẵn sàng tư vấn</p>
+                </div>
+                <button class="chat-close" onclick="toggleChat()" aria-label="Đóng">✕</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <div class="chat-bubble">Xin chào! 👋 Mình là trợ lý AI của Trạm Hẹn Hò. Bạn muốn tư vấn về sự kiện, cách tham gia, hay bất cứ điều gì?</div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Nhập tin nhắn..." autocomplete="off">
+                <button class="chat-send" id="chatSend" onclick="sendChat()" aria-label="Gửi">➤</button>
+            </div>
+        </div>
+        <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="Mở chat">
+            💬
+        </button>
+    </div>
+
+    <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const overlay = document.getElementById('mobileOverlay');
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            overlay.classList.toggle('active');
+        });
+        overlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+            overlay.classList.remove('active');
+        });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    function toggleChat() {
+        const box = document.getElementById('chatBox');
+        const toggle = document.getElementById('chatToggle');
+        box.classList.toggle('open');
+        toggle.style.display = box.classList.contains('open') ? 'none' : 'flex';
+        if (box.classList.contains('open')) {
+            document.getElementById('chatInput').focus();
+        }
+    }
+
+    function sendChat() {
+        const input = document.getElementById('chatInput');
+        const msg = input.value.trim();
+        if (!msg) return;
+
+        addChatMessage(msg, 'user');
+        input.value = '';
+
+        const typing = document.createElement('div');
+        typing.className = 'chat-message bot';
+        typing.id = 'typing';
+        typing.innerHTML = '<div class="chat-bubble"><div class="chat-typing"><span></span><span></span><span></span></div></div>';
+        document.getElementById('chatMessages').appendChild(typing);
+        scrollChat();
+
+        // Since this is a static site without AI backend chat, redirect chat interactions to the form/contact
+        setTimeout(() => {
+            document.getElementById('typing')?.remove();
+            addChatMessage('Xin lỗi, để được hỗ trợ tốt nhất, bạn vui lòng điền thông tin vào form liên hệ của chúng tôi nhé! 🥰', 'bot');
+            
+            // Add a link button inside the chat
+            setTimeout(() => {
+                const div = document.createElement('div');
+                div.className = 'chat-message bot';
+                div.innerHTML = `<div class="chat-bubble" style="background:#ff4d6d;color:white;cursor:pointer;" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7','_blank')">👉 Điền Form Đăng Ký / Hỗ Trợ</div>`;
+                document.getElementById('chatMessages').appendChild(div);
+                scrollChat();
+            }, 500);
+        }, 1000);
+    }
+
+    function addChatMessage(text, role) {
+        const div = document.createElement('div');
+        div.className = 'chat-message ' + role;
+        div.innerHTML = '<div class="chat-bubble">' + text + '</div>';
+        document.getElementById('chatMessages').appendChild(div);
+        scrollChat();
+    }
+
+    function scrollChat() {
+        const msgs = document.getElementById('chatMessages');
+        msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    document.getElementById('chatInput')?.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendChat();
+    });
+    </script>
+</body>
+</html>
