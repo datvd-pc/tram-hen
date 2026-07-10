@@ -25,8 +25,38 @@ Dưới đây là mô hình tài chính giả định cho **01 Sự kiện Hẹn
 | **TỔNG CHI PHÍ** | | **10.700.000** |
 | **LỢI NHUẬN RÒNG/EVENT** | **Doanh thu - Chi phí** | **4.270.000 (28.5%)** |
 
+### 1.2. Dự toán Doanh thu & Chi phí cho nhóm 20 người (10 Nam & 10 Nữ)
+
+Với quy mô nhóm 20 người, chi phí biến đổi giảm đi đáng kể. Ngoài ra, địa điểm thuê có thể chọn các phòng VIP hoặc khu vực lounge quy mô nhỏ hơn với giá tối ưu hơn. Đội ngũ điều phối sự kiện chỉ cần 1 nhân sự hỗ trợ MC (thay vì 2 nhân sự như nhóm 30 người).
+
+| Danh mục | Chi tiết | Thành tiền (VNĐ) |
+| :--- | :--- | :--- |
+| **TỔNG DOANH THU** | **20 khách x 499.000 VNĐ** | **9.980.000** |
+| **Chi phí Biến đổi (Variable Costs)** | | |
+| - Chi phí F&B (Nước + Teabreak) | 20 phần x 80.000 VNĐ | 1.600.000 |
+| - Quà tặng lưu niệm (Nến thơm/Sách) | 20 phần x 40.000 VNĐ | 800.000 |
+| - In ấn Match Card, Prompt Card | Bản in màu + Bút viết | 200.000 |
+| **Chi phí Cố định (Fixed Costs)** | | |
+| - Thuê địa điểm (Phòng VIP/Lounge nhỏ) | Bao trọn khu vực riêng quy mô 20 người | 2.000.000 |
+| - Thù lao MC/Host dẫn dắt | Nhân sự chuyên nghiệp | 1.200.000 |
+| - Marketing & Lọc hồ sơ | Chi phí quảng cáo & telesale chọn lọc | 1.800.000 |
+| - Nhân sự điều phối/Đón khách | 1 bạn hỗ trợ check-in, xoay bàn | 300.000 |
+| **TỔNG CHI PHÍ** | | **7.900.000** |
+| **LỢI NHUẬN RÒNG/EVENT** | **Doanh thu - Chi phí** | **2.080.000 (20.8%)** |
+
+### 1.3. Bảng so sánh hiệu quả kinh doanh theo quy mô và giá vé
+
+| Quy mô khách | Giá vé (VNĐ) | Doanh thu (VNĐ) | Chi phí (VNĐ) | Lợi nhuận ròng (VNĐ) | Tỷ suất lợi nhuận |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **20 khách (10 cặp)** | 499.000 | 9.980.000 | 7.900.000 | **2.080.000** | 20.8% |
+| **20 khách (10 cặp)** | 690.000 | 13.800.000 | 8.500.000 * | **5.300.000** | 38.4% |
+| **30 khách (15 cặp)** | 499.000 | 14.970.000 | 10.700.000 | **4.270.000** | 28.5% |
+| **30 khách (15 cặp)** | 690.000 | 20.700.000 | 11.500.000 * | **9.200.000** | 44.4% |
+
+*\* Ghi chú: Chi phí cho mức vé 690.000 VNĐ được tính tăng nhẹ do nâng cấp chất lượng quà tặng và dịch vụ teabreak cao cấp hơn.*
+
 > [!TIP]
-> **Tối ưu hóa lợi nhuận:** Khi thương hiệu đã có uy tín, chi phí Marketing/Lọc hồ sơ trên mỗi sự kiện sẽ giảm xuống còn 30-40% nhờ tệp khách đăng ký tự nhiên (Organic) và khách hàng cũ giới thiệu. Đồng thời có thể nâng giá vé lên phân khúc cao cấp hơn (690.000 VNĐ - 890.000 VNĐ/vé).
+> **Nhận xét chiến lược:** Nhóm 20 người có biên lợi nhuận thấp hơn nhóm 30 người (20.8% so với 28.5%) do chi phí cố định (địa điểm, MC) khó giảm sâu. Tuy nhiên, nhóm 20 người lại **cực kỳ tối ưu trong khâu vận hành ban đầu** vì dễ sàng lọc chất lượng tệp khách hơn, thời gian sự kiện ngắn hơn (tránh mệt mỏi cho khách) và tạo được cảm giác ấm cúng, riêng tư hơn. Khi triển khai tại Hải Phòng, **nên bắt đầu thử nghiệm với nhóm 20 người trước**. Có thể định vị phân khúc trung-cao cấp với giá vé 690.000 VNĐ để đạt hiệu quả tài chính tối ưu.
 
 ---
 
