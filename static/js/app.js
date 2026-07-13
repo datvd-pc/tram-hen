@@ -1,4 +1,4 @@
-// CHÉRIDATE — FRONTEND JAVASCRIPT
+// VALASA DATING — FRONTEND JAVASCRIPT
 // Handles luxury UI interactions, animations, multi-step forms, and Gale-Shapley matching simulator
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -482,7 +482,7 @@ function initSimulator() {
 
 // ==================== REGISTRATION FORM LOGIC ====================
 function initForm() {
-    const form = document.getElementById("cheriForm");
+    const form = document.getElementById("valasaForm");
     if (!form) return;
 
     const steps = form.querySelectorAll(".form-step");
