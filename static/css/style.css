@@ -197,6 +197,36 @@ button, input, select, textarea { font-family: inherit; }
 .hero-wow-bg {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;
 }
+.video-background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.video-background-container iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.45; /* Soft opacity so it doesn't distract from text */
+}
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(8, 2, 3, 0.45) 0%, rgba(8, 2, 3, 0.9) 100%),
+                radial-gradient(circle at center, rgba(107, 13, 33, 0.3) 0%, rgba(8, 2, 3, 0.85) 85%);
+    z-index: 2;
+}
 .orb {
     position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.35;
 }
