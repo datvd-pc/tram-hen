@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/about", "destination": "/#philosophy", "permanent": true },
+    { "source": "/events", "destination": "/#events", "permanent": true },
+    { "source": "/members", "destination": "/#register", "permanent": true },
+    { "source": "/blog", "destination": "/#science", "permanent": true }
+  ]
 }

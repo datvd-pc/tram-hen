@@ -3,550 +3,701 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trạm Hẹn Hò — Tìm Nửa Kia Hoàn Hảo | datingstation.vn</title>
-    <meta name="description" content="Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Ghép đôi thông minh với thuật toán Gale-Shapley. Gặp gỡ trực tiếp, 100% xác thực.">
-    <meta property="og:title" content="Trạm Hẹn Hò — Tìm Nửa Kia Hoàn Hảo | datingstation.vn">
-    <meta property="og:description" content="Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Ghép đôi thông minh với thuật toán Gale-Shapley. Gặp gỡ trực tiếp, 100% xác thực.">
-    <meta property="og:image" content="/static/images/hero-event.png">
+    <title>ChériDate — Hẹn Hò Tinh Tế & Khoa Học Cho Người Độc Thân Hải Phòng</title>
+    <meta name="description" content="Nền tảng hẹn hò offline tinh tế dành cho người độc thân gu cao tại Hải Phòng. Áp dụng thuật toán Nobel Gale-Shapley, xác thực 100% và không gian thưởng rượu đẳng cấp.">
+    <meta property="og:title" content="ChériDate — Hẹn Hò Tinh Tế & Khoa Học Tại Hải Phòng">
+    <meta property="og:description" content="Hẹn hò offline kết hợp Thuật toán Nobel Gale-Shapley & Không gian thưởng rượu vang ấm cúng. Trực tiếp curator uy tín chọn lọc thành viên.">
+    <meta property="og:image" content="/static/images/hero_wine_date.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://datingstation.vn">
+    <meta property="og:url" content="https://cheridate.vercel.app">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍷</text></svg>">
 </head>
 <body>
-    
-<nav class="navbar" id="navbar">
-    <div class="navbar-inner">
-        <a href="/" class="logo">
-            <img src="/static/uploads/primary_logo.png" alt="Dating Station" class="logo-icon-img">
-            <span class="logo-text">Dating Station</span>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/">Trang chủ</a></li>
-            <li><a href="/events">Sự kiện</a></li>
-            <li><a href="/members">Thành viên</a></li>
-            <li><a href="/about">Về chúng tôi</a></li>
-            <li><a href="/blog">Câu chuyện</a></li>
-            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank">Đăng nhập</a></li>
-            <li><a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đăng ký</a></li>
-        </ul>
-    </div>
-</nav>
-<div class="mobile-overlay" id="mobileOverlay"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var path = window.location.pathname;
-        var links = document.querySelectorAll('.nav-links a');
-        links.forEach(function(link) {
-            if (path === '/' && link.getAttribute('href') === '/') {
-                link.classList.add('active');
-            } else if (link.getAttribute('href') !== '/' && path.startsWith(link.getAttribute('href'))) {
-                link.classList.add('active');
-            }
-        });
-    });
-</script>
 
-    <div class="page-content">
-        <section class="hero-wow glass-hero">
+    <!-- Header / Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#home" class="logo">
+                Chéri<span>Date</span>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Mở menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#pluralism">Triết lý đa nguyên</a></li>
+                <li><a href="#science">Khoa học ghép đôi</a></li>
+                <li><a href="#events">Sự kiện mở màn</a></li>
+                <li><a href="#register" class="btn btn-primary btn-sm" style="color: white; box-shadow: none;">Đăng ký ngay</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content" id="home">
+        
+        <!-- Hero Section -->
+        <section class="hero-wow">
             <div class="hero-wow-bg">
                 <div class="orb orb-1"></div>
                 <div class="orb orb-2"></div>
                 <div class="orb orb-3"></div>
             </div>
             <div class="container hero-wow-container">
-                <div class="hero-wow-content">
-                    <div class="hero-wow-badge-top">✨ Nền tảng hẹn hò tốc độ số 1 VN</div>
+                <div class="hero-wow-content animate-on-scroll visible">
+                    <div class="hero-wow-badge-top">🍷 Hải Phòng là không lòng vòng · Hẹn thật · Gặp thật</div>
                     <h1 class="hero-wow-title">
-                        <p>Tìm </p><p>Nửa Kia</p><p> Hoàn Hảo</p>
+                        <span>Hải Phòng Không</span>
+                        <span>Lòng Vòng. Hẹn Hò</span>
+                        <span class="highlight">Phải Gặp Thật.</span>
                     </h1>
                     <p class="hero-wow-desc">
-                        Nền tảng hẹn hò tốc độ hàng đầu Việt Nam. Gặp gỡ trực tiếp, trò chuyện thú vị và để thuật toán AI tìm ra match hoàn hảo cho bạn.
+                        ChériDate không phải ứng dụng quẹt ảo. Chúng tôi là dịch vụ kết nối offline chọn lọc dành riêng cho người Hải Phòng có gu, kết hợp <strong>Thuật toán Ghép đôi Nobel</strong> và <strong>Không gian thưởng rượu ấm cúng</strong>.
                     </p>
                     <div class="hero-wow-actions">
-                        <a href="/events" class="btn-wow btn-wow-primary">
-                            <span>Xem sự kiện →</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                        <a href="#register" class="btn btn-primary">
+                            <span>Đăng ký tham gia sự kiện</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
-                        <a href="#how-it-works" class="btn-wow btn-wow-outline">Cách hoạt động ↓</a>
+                        <a href="#pluralism" class="btn btn-secondary">Khám phá triết lý ↓</a>
                     </div>
                     
                     <div class="hero-wow-metrics">
                         <div class="metric-item">
-                            <span class="m-icon">💯</span>
-                            <span>✓ Xác thực 100%</span>
+                            <span class="metric-num">100%</span>
+                            <span class="metric-label">Xác thực căn cước</span>
                         </div>
-                        <div class="metric-sep"></div>
                         <div class="metric-item">
-                            <span class="m-icon">🛡</span>
-                            <span>⬡ An toàn</span>
+                            <span class="metric-num">30</span>
+                            <span class="metric-label">Slot giới hạn / Event</span>
                         </div>
-                        <div class="metric-sep"></div>
                         <div class="metric-item">
-                            <span class="m-icon">✨</span>
-                            <span>◈ AI ghép đôi</span>
+                            <span class="metric-num">Nobel</span>
+                            <span class="metric-label">Thuật toán Gale-Shapley</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="hero-wow-visual">
+                <div class="hero-wow-visual animate-on-scroll visible">
                     <div class="visual-card-main">
-                        <img src="/static/images/hero-event.png" alt="Speed Dating">
-                        <div class="visual-glass-overlay"></div>
+                        <img src="/static/images/hero_wine_date.jpg" alt="ChériDate Wine Dating Vibe tại Hải Phòng">
                     </div>
                     <div class="visual-card-floating">
                         <div class="floating-avatar-group">
-                            <img src="https://i.pravatar.cc/100?img=1" class="f-avatar av-1">
-                            <img src="https://i.pravatar.cc/100?img=5" class="f-avatar av-2">
+                            <span class="f-avatar av-1" style="background:#4A1525; display:flex; align-items:center; justify-content:center; border-radius:50%;">🎩</span>
+                            <span class="f-avatar av-2" style="background:#5C2B40; display:flex; align-items:center; justify-content:center; border-radius:50%;">💃</span>
                             <div class="f-avatar av-match">❤️</div>
                         </div>
                         <div>
-                            <span>500+ cặp đã match thành công</span>
+                            <span style="font-size: 0.88rem; font-weight: 600; color: var(--gold-light); display:block;">Match hoàn hảo</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">Ổn định &amp; Tương hợp sâu</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section animate-on-scroll" style="padding:2.5rem 0; background: var(--bg-secondary);">
+        <!-- Pluralistic Perspective (Triết lý Đa Nguyên) -->
+        <section class="section section-alt" id="pluralism">
             <div class="container">
-                <div class="grid-4" style="gap:1rem;">
-                    <div class="glass-stat">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Cặp đã ghép đôi</div>
-                    </div>
-                    <div class="glass-stat">
-                        <div class="stat-number">2,000+</div>
-                        <div class="stat-label">Thành viên</div>
-                    </div>
-                    <div class="glass-stat">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Sự kiện tổ chức</div>
-                    </div>
-                    <div class="glass-stat">
-                        <div class="stat-number">4.8★</div>
-                        <div class="stat-label">Đánh giá trung bình</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section animate-on-scroll" style="position: relative;">
-            <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; background:var(--pink-soft); border-radius:50%; filter:blur(40px); z-index:-1;"></div>
-            <div style="position:absolute; bottom:-50px; right:-50px; width:250px; height:250px; background:rgba(140,163,184,0.08); border-radius:50%; filter:blur(50px); z-index:-1;"></div>
-            <div class="container">
-                <div style="max-width:800px; margin:0 auto; position:relative;">
-                    <div class="section-header" style="text-align:center;">
-                        <span class="section-badge" style="background: white; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow-sm);">💕 Truyền cảm hứng</span>
-                        <h2 class="section-title">Câu chuyện <span class="highlight">"Dating Station"</span></h2>
-                    </div>
-                    <div class="card" style="padding:2.5rem; margin-top:1.5rem; border: 1px solid rgba(106,45,53,0.05);">
-                        <div style="position:absolute; top:20px; left:20px; font-size:4rem; color:var(--pink-100); font-family:var(--font-display); line-height:1; opacity:0.5; pointer-events:none;">"</div>
-                        <div class="rich-content" style="position:relative; z-index:1; max-height:280px; overflow:hidden; mask-image:linear-gradient(to bottom, black 60%, transparent 100%); -webkit-mask-image:linear-gradient(to bottom, black 60%, transparent 100%);">
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); font-style: italic; border-left: 4px solid #ff4d6d; padding-left: 1rem; margin-bottom: 2rem;">
-                                “Dự án được khởi xướng bởi những con người sống tại Đà Lạt, yêu Đà Lạt và muốn góp phần gìn giữ tinh thần lãng mạn của thành phố này. Chúng tôi mong muốn mỗi cuộc gặp gỡ tại Trạm Hẹn Hò đều trở thành một kỷ niệm đẹp gắn liền với Đà Lạt – thành phố của tình yêu và những khởi đầu mới.”
-                            </p>
-                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Tôi không phải là một ứng dụng hẹn hò.</h3>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Tôi cũng không phải là một buổi mai mối. Tôi là <strong>Trạm Hẹn Hò</strong> — một nơi dừng chân, dành cho những người đang trên hành trình tìm kiếm một kết nối thật.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Tôi được sinh ra từ một câu hỏi rất đơn giản:
-                                <em>“Tại sao chúng ta có thể nói chuyện với hàng trăm người mỗi ngày, nhưng lại khó gặp được một người thực sự phù hợp?”</em>
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Chúng ta swipe rất nhiều.
-                                Chúng ta chat rất lâu.
-                                Nhưng rồi…
-                                những cuộc trò chuyện dần nhạt đi,
-                                những cuộc gặp gỡ trở nên gượng gạo,
-                                và niềm tin vào tình yêu cũng mỏng dần.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Tôi không muốn bạn phải “tìm kiếm” thêm nữa.
-                                Tôi muốn bạn gặp gỡ.
-                                Gặp một người bằng ánh mắt, bằng giọng nói, bằng năng lượng thật — không qua màn hình.
-                            </p>
-                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Nơi tình yêu bắt đầu</h3>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Tôi được tạo ra tại Đà Lạt. Một thành phố mà người ta vẫn gọi là “Thành phố của tình yêu.” Nhưng chúng tôi nhận ra một điều: Đà Lạt có rất nhiều nơi để chụp ảnh tình yêu, nhưng lại thiếu những nơi để tình yêu thực sự bắt đầu. Và đó là lý do Trạm Hẹn Hò ra đời.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Tôi không hứa sẽ giúp bạn tìm được người yêu. Nhưng tôi hứa:
-                                • Bạn sẽ gặp những con người thật.
-                                • Trong một không gian an toàn.
-                                • Với những cuộc trò chuyện có ý nghĩa.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Không cần phải cố gắng gây ấn tượng.
-                                Không cần phải “diễn”.
-                                Chỉ cần bạn là bạn.
-                            </p>
-                            <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom: 1rem; margin-top: 2rem;">Mọi thứ đều có lý do</h3>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Ở Trạm Hẹn Hò, mọi thứ đều có lý do.
-                                Việc bạn ẩn danh → để bạn thoải mái hơn.
-                                Việc không trao contact tại chỗ → để giữ sự tinh tế.
-                                Việc chọn match sau → để bạn lắng nghe cảm xúc thật của mình.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Chúng tôi không tạo ra sự vội vàng. Chúng tôi tạo ra những khoảnh khắc đủ chậm để bạn cảm nhận.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Và nếu bạn hỏi: <em>“Trạm Hẹn Hò thực sự là gì?”</em>
-                                Thì câu trả lời là: Là một nơi mà hai người xa lạ có thể bắt đầu một câu chuyện.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Còn nếu bạn hỏi: <em>“Điều gì sẽ xảy ra sau đó?”</em>
-                                Chúng tôi không biết. Có thể là:
-                                Một buổi cà phê thứ hai.
-                                Một chuyến đi cùng nhau.
-                                Hoặc một câu chuyện chỉ dừng lại ở đó.
-                            </p>
-                            <p style="font-size:1.1rem; line-height:1.9; color:var(--text-secondary); margin-bottom: 1rem;">
-                                Nhưng ít nhất… đó là một cuộc gặp gỡ thật.
-                                Và đôi khi, tình yêu không bắt đầu từ một điều gì lớn lao. Nó bắt đầu từ một buổi tối, một cuộc trò chuyện, và một nơi gọi là:
-                                <strong style="font-family:var(--font-display); font-size:1.5rem; color:#ff4d6d;">Trạm Hẹn Hò.</strong>
-                            </p>
-                        </div>
-                        <div style="text-align:center; margin-top: 2.5rem;">
-                            <a href="/about" class="btn btn-outline" style="background:white;">Xem thêm về chúng tôi →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section animate-on-scroll" id="how-it-works">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">💡 Cách hoạt động</span>
-                    <h2 class="section-title"><p>Chỉ </p><p>3 Bước</p><p> Đơn Giản</p></h2>
-                    <p class="section-subtitle">Hành trình tìm kiếm nửa kia của bạn bắt đầu từ đây</p>
-                </div>
-                <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-icon"><span class="step-icon-inner">🎫</span></div>
-                        <h3>Đặt vé &amp; Thanh toán</h3>
-                        <p>Chọn sự kiện, điền thông tin và thanh toán siêu nhanh</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-icon"><span class="step-icon-inner">💬</span></div>
-                        <h3>Gặp gỡ &amp; Bình chọn</h3>
-                        <p>Check-in tại sự kiện, trò chuyện và xếp hạng Top 5 người bạn thích</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-icon"><span class="step-icon-inner">🎉</span></div>
-                        <h3>Nhận kết quả ghép đôi</h3>
-                        <p>Thuật toán Gale-Shapley chạy lúc nửa đêm, bạn nhận kết quả vào sáng hôm sau!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-alt animate-on-scroll">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">🤖 Công nghệ</span>
-                    <h2 class="section-title"><p>Ghép Đôi </p><p>Thông Minh AI</p></h2>
-                    <p class="section-subtitle">Thuật toán Gale-Shapley + AI phân tích hồ sơ tìm ra match hoàn hảo</p>
-                </div>
-                <div class="ai-showcase-grid">
-                    <div class="feature-image-wrapper">
-                        <img src="/static/images/ai-matching.png" alt="AI Matching Technology" loading="lazy">
-                    </div>
-                    <div>
-                        <div class="ai-feature-card">
-                            <h3>🧠 Thuật toán Nobel Prize</h3>
-                            <p>Gale-Shapley đảm bảo kết quả <strong>stable matching</strong> — không ai muốn đổi partner sau khi match.</p>
-                        </div>
-                        <div class="ai-feature-card">
-                            <h3>🔮 AI Compatibility Score</h3>
-                            <p>Phân tích sở thích, tính cách, lịch sử match để tính điểm tương thích 0-100%.</p>
-                        </div>
-                        <div class="ai-feature-card">
-                            <h3>✅ Anti-Gaming</h3>
-                            <p>Hệ thống chống gian lận — không thể hack kết quả ghép đôi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section animate-on-scroll">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">🔥 Sắp diễn ra</span>
-                    <h2 class="section-title"><p>Sự Kiện </p><p>Nổi Bật</p></h2>
-                    <p class="section-subtitle">Đăng ký ngay để không bỏ lỡ cơ hội gặp người ấy</p>
-                </div>
-                <div class="grid-3" id="events-grid">
-                    
-                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
-                        <div class="event-cover"><img src="/static/uploads/event1.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
-                        <div class="event-date">
-                            📅 02/05/2026 12:00
-                            <span class="status-badge open">OPEN</span>
-                        </div>
-                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
-                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
-                        <div class="slot-info">
-                            <span class="slot-badge male">👨 15/15 nam</span>
-                            <span class="slot-badge female">👩 15/15 nữ</span>
-                        </div>
-                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
-                            <span class="event-price">990.000 <span>VNĐ</span></span>
-                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
-                        <div class="event-cover"><img src="/static/uploads/blind-dating-dalat-cover.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
-                        <div class="event-date">
-                            📅 01/05/2026 12:00
-                            <span class="status-badge open">OPEN</span>
-                        </div>
-                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
-                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
-                        <div class="slot-info">
-                            <span class="slot-badge male">👨 15/15 nam</span>
-                            <span class="slot-badge female">👩 14/15 nữ</span>
-                        </div>
-                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
-                            <span class="event-price">990.000 <span>VNĐ</span></span>
-                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card event-card" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7', '_blank')">
-                        <div class="event-cover"><img src="/static/uploads/blind-dating-dalat-cover.jpg" alt="Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt" loading="lazy"></div>
-                        <div class="event-date">
-                            📅 30/04/2026 15:00
-                            <span class="status-badge open">OPEN</span>
-                        </div>
-                        <h3>Blind Dating Đà Lạt — Hẹn Hò Giấu Mặt</h3>
-                        <div class="event-location">📍 Nhà hàng &amp; Bar Drinkery Đà Lạt: 69 Trương Công Định - Đà Lạt</div>
-                        <div class="slot-info">
-                            <span class="slot-badge male">👨 15/15 nam</span>
-                            <span class="slot-badge female">👩 15/15 nữ</span>
-                        </div>
-                        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
-                            <span class="event-price">990.000 <span>VNĐ</span></span>
-                            <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-sm">Đặt vé →</a>
-                        </div>
-                    </div>
-                    
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Góc nhìn đa nguyên</span>
+                    <h2 class="section-title">Hạnh Phúc Không Có <span class="highlight">Một Công Thức Chung</span></h2>
+                    <p class="section-subtitle">Chúng tôi không ép buộc bạn vào một khuôn mẫu tình yêu định sẵn. ChériDate ghi nhận chính xác kỳ vọng thực tế của mỗi thành viên Hải Phòng:</p>
                 </div>
                 
-                <div style="text-align:center; margin-top:2.5rem;">
-                    <a href="/events" class="btn btn-outline btn-lg">Xem tất cả sự kiện →</a>
+                <div class="plural-grid">
+                    <div class="plural-card animate-on-scroll">
+                        <div class="plural-icon">💍</div>
+                        <h3>Khát vọng Tri kỷ</h3>
+                        <p>Dành cho những người độc thân nghiêm túc kiếm tìm một nửa đồng điệu, hướng tới xây dựng tổ ấm gia đình bền vững. Chúng tôi đối chiếu sâu sắc về gia thế, nhân sinh quan, tài chính và định hướng tương lai.</p>
+                    </div>
+                    
+                    <div class="plural-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="plural-icon">🍷</div>
+                        <h3>Đồng điệu Phong cách sống</h3>
+                        <p>Dành cho những người thành đạt, độc lập, muốn tìm kiếm một bạn đồng hành cùng gu thưởng thức: đi nghe nhạc, thưởng vang tại Valia Wine Bar, chia sẻ trải nghiệm văn hóa cao cấp và chiều lòng giác quan.</p>
+                    </div>
+                    
+                    <div class="plural-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="plural-icon">🧠</div>
+                        <h3>Kết nối Trí tuệ</h3>
+                        <p>Dành cho người coi trọng sự tương đồng về tư duy, học thức và chiều sâu tâm hồn. Những cuộc hội thoại không đầu không cuối, tranh biện văn minh và cùng nhau phát triển bản thân trên hành trình tri thức.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt animate-on-scroll">
+        <!-- Systems Thinking (Tư duy Hệ thống) -->
+        <section class="section" id="science">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">💕 Câu chuyện</span>
-                    <h2 class="section-title"><p>Họ Đã </p><p>Tìm Thấy Nhau</p></h2>
-                    <p class="section-subtitle">Những câu chuyện tình yêu bắt đầu từ Trạm Hẹn Hò</p>
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Tư duy hệ thống</span>
+                    <h2 class="section-title">Tại Sao Hẹn Hò Truyền Thống <span class="highlight">Làm Bạn Kiệt Sức?</span></h2>
+                    <p class="section-subtitle">Độc thân không phải do bạn thiếu may mắn. Đó là do bạn đang mắc kẹt trong một hệ thống hẹn hò bị lỗi.</p>
                 </div>
-                <div class="stories-grid">
-                    <div>
-                        <div class="story-card">
-                            <div class="story-icon">💑</div>
-                            <p class="story-quote">"Mình gặp anh ấy tại sự kiện Speed Dating tháng 12. Chỉ 5 phút trò chuyện mà biết ngay đây là người mình tìm kiếm. Thuật toán cũng match chúng mình lại!"</p>
-                            <p class="story-author">— Hà &amp; Minh, match từ Event #8</p>
-                        </div>
-                        <div class="story-card">
-                            <div class="story-icon">👫</div>
-                            <p class="story-quote">"Đã đi 3 sự kiện mới tìm được người hợp. Cảm ơn đội ngũ Trạm Hẹn Hò đã tổ chức chuyên nghiệp quá!"</p>
-                            <p class="story-author">— Linh &amp; Tuấn, match từ Event #15</p>
+
+                <div class="systems-showcase">
+                    <!-- Broken Tinder Loop -->
+                    <div class="sys-side sys-side-broken animate-on-scroll">
+                        <h3 class="sys-side-title"><span>⚠️</span> Hệ thống quẹt ảo (Tinder/Hinge)</h3>
+                        <div class="sys-steps">
+                            <div class="sys-step">
+                                <div class="sys-step-num">1</div>
+                                <div class="sys-step-detail">
+                                    <h4>Profile ảo &amp; Cheap Talk</h4>
+                                    <p>Tạo tài khoản miễn phí dễ dàng dẫn đến nói suông, gian lận hình ảnh và thông tin không trung thực.</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">2</div>
+                                <div class="sys-step-detail">
+                                    <h4>Nghiện quẹt ảo (Dopamine Loop)</h4>
+                                    <p>Thiết kế nhằm giữ chân bạn trên app để xem quảng cáo, tạo ra ảo giác "còn rất nhiều lựa chọn tốt hơn".</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">3</div>
+                                <div class="sys-step-detail">
+                                    <h4>Ghosting &amp; Mất lòng tin</h4>
+                                    <p>Trò chuyện hời hợt, dễ dàng biến mất không lý do. Bạn tốn thời gian nhắn tin kéo dài nhưng không bao giờ gặp thật.</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">4</div>
+                                <div class="sys-step-detail">
+                                    <h4>Dating Burnout (Kiệt sức)</h4>
+                                    <p>Hệ quả tất yếu: Mất niềm tin vào con người, kiệt quệ cảm xúc và chấp nhận tiếp tục cô đơn.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature-image-wrapper">
-                        <img src="/static/images/couple-success.png" alt="Cặp đôi thành công" loading="lazy">
+
+                    <!-- Optimized ChériDate Loop -->
+                    <div class="sys-side sys-side-optimal animate-on-scroll">
+                        <h3 class="sys-side-title"><span>✨</span> Hệ thống tối ưu của ChériDate</h3>
+                        <div class="sys-steps">
+                            <div class="sys-step">
+                                <div class="sys-step-num">1</div>
+                                <div class="sys-step-detail">
+                                    <h4>Đầu vào chọn lọc (Input Control)</h4>
+                                    <p>Bắt buộc xác thực danh tính (CCCD) và duyệt tay hồ sơ bởi Curator uy tín. Loại bỏ hoàn toàn tài khoản ảo.</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">2</div>
+                                <div class="sys-step-detail">
+                                    <h4>Tương tác đa giác quan (Gặp thật)</h4>
+                                    <p>Gặp gỡ trực tiếp 15 đối tượng phù hợp nhất trong 3 tiếng tại Valia Wine Bar. Cảm nhận thật qua ánh mắt, giọng nói, pheromone.</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">3</div>
+                                <div class="sys-step-detail">
+                                    <h4>Bình chọn kín (Single-blind Feedback)</h4>
+                                    <p>Sau sự kiện, bạn chỉ chấm điểm kín top người bạn ấn tượng nhất. Không áp lực từ chối, không lo mất sĩ diện.</p>
+                                </div>
+                            </div>
+                            <div class="sys-step">
+                                <div class="sys-step-num">4</div>
+                                <div class="sys-step-detail">
+                                    <h4>Ghép đôi ổn định (Stable Match)</h4>
+                                    <p>Thuật toán Gale-Shapley tính toán để tìm ra trạng thái kết nối tối ưu nhất, cam kết không có sự tiếc nuối hay FOMO.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section animate-on-scroll">
+        <!-- Game Theory Solution (Lý Thuyết Trò Chơi) -->
+        <section class="section section-alt">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-badge">⭐ Tính năng</span>
-                    <h2 class="section-title"><p>Tại Sao Chọn </p><p>Trạm Hẹn Hò?</p></h2>
-                    <p class="section-subtitle">Được tin tưởng bởi hàng ngàn người dùng tại Việt Nam</p>
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Lý thuyết trò chơi</span>
+                    <h2 class="section-title">Giải Mã "Bài Toán Trái Tim" <span class="highlight">Bằng Toán Học</span></h2>
+                    <p class="section-subtitle">ChériDate áp dụng các nguyên lý Kinh tế học hành vi để thiết kế luật chơi công bằng, loại bỏ hoàn toàn các rủi ro tâm lý thường gặp khi hẹn hò.</p>
                 </div>
-                <div class="grid-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🧠</div>
-                        <h3>Ghép đôi thông minh</h3>
-                        <p>Thuật toán Gale-Shapley đảm bảo kết quả tối ưu nhất</p>
+
+                <div class="game-theory-intro animate-on-scroll">
+                    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-light);">
+                        Người Hải Phòng tính tình thẳng thắn, trọng chữ tín và rất coi trọng sĩ diện. Hiểu được tâm lý đó, chúng tôi thiết kế hệ thống tương tác dựa trên lý thuyết trò chơi nhằm tối ưu hóa hành vi chân thật của tất cả mọi người.
+                    </p>
+                </div>
+
+                <div class="game-grid">
+                    <!-- Lemons Problem / Costly Signaling -->
+                    <div class="game-card animate-on-scroll">
+                        <span class="game-tag">Trò chơi 1: Chống nói suông</span>
+                        <h3>Costly Signaling<br><span class="highlight">(Tín hiệu đắt giá)</span></h3>
+                        
+                        <div class="game-block">
+                            <div class="game-block-title">❌ Vấn đề (Cheap Talk):</div>
+                            <p>Trên các app miễn phí, chi phí để nói dối, vẽ profile ảo là bằng 0. Dẫn đến việc người không nghiêm túc tràn ngập hệ thống (Lemons Problem).</p>
+                        </div>
+                        
+                        <div class="game-block game-block-sol">
+                            <div class="game-block-title">✅ Giải pháp ChériDate:</div>
+                            <p>Bằng cách thu phí tham gia sự kiện và yêu cầu KYC xác thực thông tin. Chúng tôi tạo ra một "Tín hiệu đắt giá". Chỉ những người thực sự nghiêm túc, tôn trọng thời gian mới sẵn sàng đầu tư. Người Hải Phòng "nói được làm được", không lòng vòng.</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>An toàn tuyệt đối</h3>
-                        <p>KYC xác thực danh tính, bảo vệ thông tin cá nhân</p>
+
+                    <!-- Prisoner's Dilemma / Single blind -->
+                    <div class="game-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <span class="game-tag">Trò chơi 2: Bảo vệ Sĩ diện</span>
+                        <h3>Single-Blind Selection<br><span class="highlight">(Bình chọn ẩn danh)</span></h3>
+                        
+                        <div class="game-block">
+                            <div class="game-block-title">❌ Vấn đề (Prisoner's Dilemma):</div>
+                            <p>Khi thích một người, ai cũng sợ ngỏ lời trước vì sợ bị từ chối trực tiếp, gây "quê" và tổn thương lòng tự trọng. Kết quả: cả hai giữ kẽ và bỏ lỡ nhau.</p>
+                        </div>
+                        
+                        <div class="game-block game-block-sol">
+                            <div class="game-block-title">✅ Giải pháp ChériDate:</div>
+                            <p>Bảo mật 100% lựa chọn của bạn. Bạn chỉ tick Top 5 người bạn thích vào phiếu bảo mật. Đối phương không hề biết bạn đã chọn họ, trừ khi hai người cùng chọn nhau. Nếu trượt, sự từ chối diễn ra trong im lặng tuyệt đối. Sĩ diện của bạn an toàn.</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Tốc độ &amp; Tiện lợi</h3>
-                        <p>Đặt vé 30 giây, điền thông tin siêu nhanh</p>
+
+                    <!-- Stable Matching / Gale Shapley -->
+                    <div class="game-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <span class="game-tag">Trò chơi 3: Chấm dứt FOMO</span>
+                        <h3>Gale-Shapley Balance<br><span class="highlight">(Cân bằng ổn định)</span></h3>
+                        
+                        <div class="game-block">
+                            <div class="game-block-title">❌ Vấn đề (Coordination Failure):</div>
+                            <p>Hội chứng FOMO - bạn luôn nghĩ "quẹt thêm chút nữa biết đâu gặp người đẹp hơn", khiến bạn không bao giờ chịu cam kết và trân trọng người trước mắt.</p>
+                        </div>
+                        
+                        <div class="game-block game-block-sol">
+                            <div class="game-block-title">✅ Giải pháp ChériDate:</div>
+                            <p>Áp dụng thuật toán đoạt giải Nobel Kinh tế. Thuật toán tìm ra điểm cân bằng ổn định duy nhất dựa trên bảng nguyện vọng ưu tiên của mọi thành viên. Bạn được ghép cặp với người phù hợp nhất trong số những người thích bạn. Không tiếc nuối.</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💯</div>
-                        <h3>Cam kết chất lượng</h3>
-                        <p>Sự kiện cao cấp, không gian sang trọng, đội ngũ chuyên nghiệp</p>
+                </div>
+
+                <!-- Interactive Simulator Container -->
+                <div class="simulator-box animate-on-scroll" id="simulator-widget">
+                    <div class="text-center" style="max-width: 650px; margin: 0 auto 3rem;">
+                        <h3 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 1rem; color: var(--gold-light);">Mô Phỏng Thuật Toán Gale-Shapley</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Trực quan hóa cách thuật toán Nobel ghép đôi 3 cặp nam nữ dựa trên bảng ưu tiên, tự động giải quyết các xung đột lựa chọn.</p>
+                    </div>
+                    
+                    <div class="sim-grid">
+                        <div class="sim-visualizer">
+                            <div class="sim-nodes">
+                                <!-- Column Men -->
+                                <div class="sim-column sim-column-men">
+                                    <div class="sim-node free" id="sim-man-an">
+                                        <span class="node-avatar">🎩</span>
+                                        <div class="node-info">
+                                            <h5>An (29t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: Hoa > Lan > Dung</span>
+                                        </div>
+                                    </div>
+                                    <div class="sim-node free" id="sim-man-binh">
+                                        <span class="node-avatar">🍷</span>
+                                        <div class="node-info">
+                                            <h5>Bình (32t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: Hoa > Dung > Lan</span>
+                                        </div>
+                                    </div>
+                                    <div class="sim-node free" id="sim-man-cuong">
+                                        <span class="node-avatar">🕶️</span>
+                                        <div class="node-info">
+                                            <h5>Cường (30t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: Lan > Hoa > Dung</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Connection Lines SVG overlay -->
+                                <svg class="sim-lines-svg" id="sim-svg">
+                                    <!-- Dynamic lines injected here -->
+                                </svg>
+                                
+                                <!-- Column Women -->
+                                <div class="sim-column sim-column-women">
+                                    <div class="sim-node free" id="sim-woman-dung">
+                                        <div class="node-info" style="text-align: right;">
+                                            <h5>Dung (27t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: An > Bình > Cường</span>
+                                        </div>
+                                        <span class="node-avatar">💃</span>
+                                    </div>
+                                    <div class="sim-node free" id="sim-woman-hoa">
+                                        <div class="node-info" style="text-align: right;">
+                                            <h5>Hoa (28t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: Bình > An > Cường</span>
+                                        </div>
+                                        <span class="node-avatar">🌹</span>
+                                    </div>
+                                    <div class="sim-node free" id="sim-woman-lan">
+                                        <div class="node-info" style="text-align: right;">
+                                            <h5>Lan (26t)</h5>
+                                            <span class="node-match">Độc thân</span>
+                                            <span style="font-size: 0.65rem; color: var(--gold);">Ưu tiên: An > Cường > Bình</span>
+                                        </div>
+                                        <span class="node-avatar">🎀</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sim-log">
+                                <span id="sim-log-text">Nhấn 'Chạy Tự Động' hoặc 'Bước Tiếp Theo' để xem cách thuật toán Nobel giải quyết bài toán hôn nhân.</span>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                            <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold); margin-bottom: 1rem;">Diễn Giải Kịch Bản Mô Phỏng:</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.7;">
+                                • <strong>Vòng 1:</strong> An ngỏ lời với Hoa (Hoa tạm giữ). Bình cũng ngỏ lời với Hoa. Vì Hoa chuộng Bình hơn An, cô quyết định <i>từ chối An</i> để giữ Bình. Cường ngỏ lời với Lan (Lan tạm giữ).<br>
+                                • <strong>Vòng 2:</strong> An sau khi bị Hoa từ chối liền chuyển hướng ngỏ lời với Lan. Vì Lan chuộng An hơn Cường, cô quyết định <i>buông Cường</i> để đón nhận An. Cường trở lại trạng thái độc thân.<br>
+                                • <strong>Vòng 3:</strong> Cường bị bỏ rơi liền quay sang ngỏ lời với Hoa (Hoa từ chối vì đang hạnh phúc bên Bình).<br>
+                                • <strong>Vòng 4:</strong> Cường tiếp tục ngỏ lời với Dung. Dung đang đơn thân nên lập tức đồng ý tạm giữ Cường. Thuật toán kết thúc thắng lợi!
+                            </p>
+                            <div class="sim-controls">
+                                <button class="btn btn-secondary btn-sm" id="sim-btn-reset">Đặt lại</button>
+                                <button class="btn btn-secondary btn-sm" id="sim-btn-next">Bước Tiếp Theo</button>
+                                <button class="btn btn-primary btn-sm" id="sim-btn-auto" style="min-width: 150px;">
+                                    <span>▶ Chạy Tự Động</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section animate-on-scroll">
-            <div class="container" style="text-align:center;">
-                <h2 class="cta-title">Sẵn Sàng Tìm Nửa Kia?</h2>
-                <p class="cta-subtitle">Đăng ký thông tin nhận tư vấn ngay hôm nay. Sự kiện tiếp theo đang chờ bạn!</p>
-                <div class="cta-actions">
-                    <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-primary btn-lg">🚀 Đăng ký ngay</a>
-                    <a href="https://forms.gle/fLyC9BnLCd5HSvvK7" target="_blank" class="btn btn-outline btn-lg">Liên hệ chúng tôi</a>
+        <!-- Event Highlight Section (Sự kiện mở màn tại Hải Phòng) -->
+        <section class="section" id="events">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Sự kiện độc quyền</span>
+                    <h2 class="section-title">ChériDate #1: <span class="highlight">Vang &amp; Gặp Gỡ</span></h2>
+                    <p class="section-subtitle">Buổi hẹn hò tốc độ tinh tế đầu tiên dành cho 30 người độc thân ưu tú tại Hải Phòng.</p>
+                </div>
+
+                <div class="event-showcase animate-on-scroll">
+                    
+                    <!-- Information Panel -->
+                    <div class="event-info-panel">
+                        <span style="color: var(--gold); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; display:block; margin-bottom:0.75rem;">ĐỊA ĐIỂM SANG TRỌNG</span>
+                        <h3 class="event-title">Buổi Tối Thưởng Vang &amp; Kết Nối Ý Nghĩa</h3>
+                        
+                        <div class="event-meta">
+                            <div class="meta-row">
+                                <div class="meta-icon">📅</div>
+                                <div class="meta-desc">
+                                    <h4>Thời gian tổ chức</h4>
+                                    <p>20:00, Thứ Ba, Ngày 25/08/2026</p>
+                                </div>
+                            </div>
+                            <div class="meta-row">
+                                <div class="meta-icon">📍</div>
+                                <div class="meta-desc">
+                                    <h4>Địa điểm tinh tế</h4>
+                                    <p>Valia Wine Bar — 68 Đ. Bùi Viện, Hải Phòng</p>
+                                </div>
+                            </div>
+                            <div class="meta-row">
+                                <div class="meta-icon">🎭</div>
+                                <div class="meta-desc">
+                                    <h4>Hình thức sự kiện</h4>
+                                    <p>Speed Dating (15 Nam, 15 Nữ) ẩn danh, lịch thiệp, riêng tư.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slots Count -->
+                        <div class="slots-bar">
+                            <div class="slot-badge-pv male-badge">
+                                <span>👨 Slot Nam (Đã duyệt)</span>
+                                <span class="slot-count">12 / 15</span>
+                            </div>
+                            <div class="slot-badge-pv female-badge">
+                                <span>👩 Slot Nữ (Đã duyệt)</span>
+                                <span class="slot-count">10 / 15</span>
+                            </div>
+                        </div>
+
+                        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2rem; display:flex; align-items:center; justify-content:space-between; flex-wrap: wrap; gap: 1.5rem;">
+                            <div class="event-price-tag">
+                                <span class="price-value">990.000</span>
+                                <span class="price-currency">VNĐ / VÉ</span>
+                            </div>
+                            <a href="#register" class="btn btn-primary">Đặt vé ngay →</a>
+                        </div>
+                        <p style="font-size:0.75rem; color: var(--text-muted); margin-top:1rem;">*Vé bao gồm 01 ly vang hảo hạng, đĩa Tapas chuẩn vị, và phí chạy thuật toán ghép cặp Gale-Shapley.</p>
+                    </div>
+
+                    <!-- Visual Panel (Valia Gallery) -->
+                    <div class="event-media-panel">
+                        <div class="gallery-slider">
+                            <div class="gallery-slide active" style="background-image: url('/static/images/hero_wine_date.jpg');"></div>
+                            <div class="gallery-slide" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1000&auto=format&fit=crop');"></div>
+                            <div class="gallery-slide" style="background-image: url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=1000&auto=format&fit=crop');"></div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Valia Wine Bar</h4>
+                            <p>Không gian thưởng vang lãng mạn bậc nhất Hải Phòng. Ánh nến ấm áp, kệ gỗ sồi cổ điển, riêng tư tuyệt đối.</p>
+                        </div>
+                        <div class="gallery-nav">
+                            <button class="gallery-dot active" aria-label="Slide 1"></button>
+                            <button class="gallery-dot" aria-label="Slide 2"></button>
+                            <button class="gallery-dot" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Curator Card (Người tổ chức) -->
+                <div class="curator-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Nguyễn Thuý Mỵ (Calla Lily)" class="curator-img">
+                    <div class="curator-content">
+                        <span class="curator-title">Người điều hành &amp; Duyệt hồ sơ</span>
+                        <h3>Nguyễn Thuý Mỵ (Calla Lily)</h3>
+                        <p class="curator-bio">
+                            "Tôi tin rằng người Hải Phòng sành điệu xứng đáng có một không gian hẹn hò lịch sự, không xô bồ, không ảo tưởng. Với tư cách là Curator của ChériDate, tôi cam kết phỏng vấn chọn lọc từng hồ sơ tham gia để đảm bảo chất lượng giao thiệp tốt nhất. Mọi thắc mắc về sự kiện, hãy kết nối trực tiếp với tôi."
+                        </p>
+                        <a href="tel:0901889199" class="curator-contact">
+                            <span>📞 SĐT liên hệ trực tiếp: <strong>0901889199</strong></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Registration Form Section (CTA) -->
+        <section class="section section-alt" id="register">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Gia nhập ChériDate</span>
+                    <h2 class="section-title">Bắt Đầu Câu Chuyện <span class="highlight">Của Riêng Bạn</span></h2>
+                    <p class="section-subtitle">Đăng ký thông tin ban đầu. Hồ sơ của bạn sẽ được bảo mật tuyệt đối và chỉ dùng cho mục đích đối chiếu ghép cặp.</p>
+                </div>
+
+                <div class="register-form-box animate-on-scroll">
+                    
+                    <!-- Progress steps indicator -->
+                    <div class="form-step-indicator">
+                        <div class="step-dot active" id="step-ind-0">1</div>
+                        <div class="step-dot" id="step-ind-1">2</div>
+                        <div class="step-dot" id="step-ind-2">3</div>
+                    </div>
+
+                    <form id="cheriForm" onsubmit="event.preventDefault();">
+                        
+                        <!-- Step 1: Personal Info -->
+                        <div class="form-step active" id="form-step-0">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold-light); margin-bottom: 2rem; border-left: 3px solid var(--wine); padding-left: 0.75rem;">Bước 1: Thông tin liên lạc</h3>
+                            
+                            <div class="form-group">
+                                <label for="fullname">Họ và tên của bạn</label>
+                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Nguyễn Văn A" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại (Zalo nhận kết quả)</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="0901234567" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Tuổi của bạn</label>
+                                <input type="number" id="age" name="age" class="form-control" min="18" max="60" placeholder="28" required>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Pluralism expectation -->
+                        <div class="form-step" id="form-step-1">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold-light); margin-bottom: 2rem; border-left: 3px solid var(--wine); padding-left: 0.75rem;">Bước 2: Kỳ vọng của bạn</h3>
+                            
+                            <div class="form-group">
+                                <label>Giới tính của bạn</label>
+                                <div class="radio-tile-group">
+                                    <label class="radio-tile">
+                                        <input type="radio" name="gender" value="nam" required>
+                                        <span class="tile-icon">🎩</span>
+                                        <span class="tile-label">Nam giới</span>
+                                    </label>
+                                    <label class="radio-tile">
+                                        <input type="radio" name="gender" value="nu" required>
+                                        <span class="tile-icon">💃</span>
+                                        <span class="tile-label">Nữ giới</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nhu cầu cốt lõi bạn tìm kiếm (Tư duy đa nguyên)</label>
+                                <select id="goal" name="goal" class="form-control" required style="background-color: #080203; cursor: pointer;">
+                                    <option value="" disabled selected>Chọn định hướng của bạn...</option>
+                                    <option value="triky">Khát vọng Tri kỷ (Tìm hiểu sâu sắc, kết hôn nghiêm túc)</option>
+                                    <option value="dongdieu">Đồng điệu Phong cách sống (Bạn bè chia sẻ gu thưởng thức, đi chơi)</option>
+                                    <option value="tritue">Kết nối Trí tuệ (Tìm đối tác đàm luận, cùng tần số tư duy)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="intro">Đôi nét về bạn (Công việc, sở thích, gu sống)</label>
+                                <textarea id="intro" name="intro" class="form-control" rows="3" placeholder="Ví dụ: Kỹ sư công nghệ, thích đọc sách, cuối tuần thích đi uống cafe acoustic..." required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Identity confirmation -->
+                        <div class="form-step" id="form-step-2">
+                            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold-light); margin-bottom: 2rem; border-left: 3px solid var(--wine); padding-left: 0.75rem;">Bước 3: Cam kết chân thực</h3>
+                            
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.7;">
+                                Để đảm bảo an toàn tối đa cho hệ thống hẹn hò offline, ChériDate cam kết 100% người tham dự đều được xác thực nhân thân. Bạn đồng ý cung cấp ảnh CCCD chụp rõ ràng hoặc xuất trình trực tiếp cho Curator <strong>Nguyễn Thuý Mỵ (Calla Lily)</strong> khi xác nhận vé sự kiện chứ?
+                            </p>
+
+                            <div class="form-group">
+                                <div class="radio-tile-group">
+                                    <label class="radio-tile" style="grid-column: span 2;">
+                                        <input type="radio" name="kyc_agree" value="agree" required>
+                                        <span class="tile-icon">🛡️</span>
+                                        <span class="tile-label" style="margin-top:0.25rem;">Tôi đồng ý xác thực nhân thân (Bảo mật 100%)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label style="display:flex; align-items:center; gap: 0.5rem; cursor:pointer; font-weight: normal; font-size: 0.85rem; color: var(--text-muted);">
+                                    <input type="checkbox" required style="accent-color: var(--gold);">
+                                    <span>Tôi cam kết thông tin khai báo là hoàn toàn trung thực.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Actions Navigation -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="btn-prev" style="visibility: hidden;">← Quay lại</button>
+                            <button type="button" class="btn btn-primary" id="btn-next">Tiếp Theo →</button>
+                        </div>
+                    </form>
+
+                    <!-- Success Screen -->
+                    <div class="success-screen" id="successScreen">
+                        <div class="success-icon">🏆</div>
+                        <h3>Hồ Sơ Đăng Ký Đã Được Tiếp Nhận!</h3>
+                        <p>
+                            Cảm ơn bạn đã tin tưởng ChériDate. Curator <strong>Nguyễn Thuý Mỵ (Calla Lily)</strong> sẽ xem xét và chủ động gọi điện xác nhận, tư vấn cũng như gửi vé điện tử cho bạn trong vòng 24 giờ tới qua SĐT/Zalo đã đăng ký.
+                        </p>
+                        <div style="display:flex; justify-content:center; gap:1.25rem; flex-wrap:wrap; margin-top:2rem;">
+                            <a href="https://zalo.me/0901889199" target="_blank" class="btn btn-primary">
+                                <span>💬 Nhắn Zalo cho Calla Lily</span>
+                            </a>
+                            <a href="tel:0901889199" class="btn btn-secondary">
+                                <span>📞 Gọi điện trực tiếp</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-    </div>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content" style="text-align:center;">
-            <span>💕</span>
-            <span>© 2026 Dating Station. Giữa triệu người, ta tìm thấy nhau ở Trạm ♡</span>
-            <span>💕</span>
-        </div>
-    </div>
-</footer>
-<div class="toast-container" id="toast-container"></div>
-<script src="/static/js/app.js"></script>
-
-    <div class="chat-widget" id="chatWidget">
-        <div class="chat-box" id="chatBox">
-            <div class="chat-header">
-                <div class="chat-header-avatar">🤖</div>
-                <div class="chat-header-info">
-                    <h4>Trợ lý Trạm Hẹn Hò</h4>
-                    <p>Luôn sẵn sàng tư vấn</p>
+        <!-- FAQs (Hỏi đáp nhanh) -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-badge">Hỏi đáp nhanh</span>
+                    <h2 class="section-title">Giải Đáp Thắc Mắc <span class="highlight">Bộc Trực</span></h2>
+                    <p class="section-subtitle">Người Hải Phòng hỏi thẳng, chúng tôi trả lời thật. Không văn vở, không hoa mỹ.</p>
                 </div>
-                <button class="chat-close" onclick="toggleChat()" aria-label="Đóng">✕</button>
-            </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot">
-                    <div class="chat-bubble">Xin chào! 👋 Mình là trợ lý AI của Trạm Hẹn Hò. Bạn muốn tư vấn về sự kiện, cách tham gia, hay bất cứ điều gì?</div>
+
+                <div class="faq-list">
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-trigger">
+                            <span>Sự kiện 990.000đ có đắt quá không so với việc dùng app miễn phí?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Không hề đắt. Nếu bạn dùng app miễn phí, bạn tốn hàng tháng trời quẹt ảo, tốn hàng triệu đồng cho những buổi cà phê nhạt nhẽo với những người không giống hình ảnh trên mạng, hoặc tốn năng lượng đối mặt với "cheap talk". 990.000đ tại ChériDate bao gồm đồ uống hảo hạng, tapas chất lượng tại Valia Wine Bar, sự bảo mật thông tin, việc lọc sạch người thiếu nghiêm túc, và cơ hội gặp trực tiếp 15 người thật được chọn lọc tay. Đây là khoản đầu tư thông minh cho thời gian và cảm xúc của bạn.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-trigger">
+                            <span>Thông tin căn cước công dân của tôi có bị lộ ra ngoài không?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Tuyệt đối không. Việc yêu cầu KYC chỉ nhằm mục đích đảm bảo 100% người tham dự đều là "người thật việc thật", không có tài khoản ảo hay đối tượng lừa đảo. Thông tin CCCD của bạn chỉ được xem xét đối chiếu một lần duy nhất bởi Curator Nguyễn Thuý Mỵ, không lưu trữ trên máy chủ công cộng và không bao giờ chia sẻ cho bất kỳ bên thứ ba nào.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-trigger">
+                            <span>Tôi không thích uống rượu vang thì có tham dự được không?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Hoàn toàn được. Rượu vang tại Valia Wine Bar là chất xúc tác tinh tế giúp không khí thêm phần cởi mở, ấm cúng. Tuy nhiên, nếu bạn không dùng cồn, Valia luôn sẵn sàng phục vụ nước trái cây cao cấp, mocktail hoặc trà hoa thượng hạng để chiều lòng gu của bạn.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll">
+                        <button class="faq-trigger">
+                            <span>Nếu sau sự kiện tôi không ghép đôi được với ai thì sao?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Hẹn hò là một hệ thống xác suất. Dù không ghép đôi thành công ngay lần đầu, bạn đã có một buổi tối thư giãn tuyệt vời tại một trong những wine bar sang xịn nhất Hải Phòng, thưởng thức đồ uống ngon, kết nối với những người bạn độc thân ưu tú cùng gu. Đồng thời, hồ sơ của bạn vẫn được giữ trong hệ thống lưu trữ ưu tiên của ChériDate để thuật toán tiếp tục tìm kiếm và gợi ý ghép đôi cho các sự kiện tiếp theo.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="chat-input-area">
-                <input type="text" class="chat-input" id="chatInput" placeholder="Nhập tin nhắn..." autocomplete="off">
-                <button class="chat-send" id="chatSend" onclick="sendChat()" aria-label="Gửi">➤</button>
-            </div>
-        </div>
-        <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="Mở chat">
-            💬
-        </button>
+        </section>
+
     </div>
 
-    <script>
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 20);
-    });
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Chéri<span>Date</span></div>
+                    <p class="footer-desc">
+                        Nền tảng kết nối offline chất lượng cao cho người độc thân gu cao tại Hải Phòng. Áp dụng khoa học toán học và không gian nghệ thuật để gắn kết những tâm hồn đồng điệu.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Khám Phá</h4>
+                    <ul class="footer-links">
+                        <li><a href="#pluralism">Triết lý đa nguyên</a></li>
+                        <li><a href="#science">Khoa học ghép đôi</a></li>
+                        <li><a href="#events">Sự kiện mở màn</a></li>
+                        <li><a href="#register">Đăng ký tham gia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Người Đại Diện</h4>
+                    <ul class="footer-links" style="color: var(--text-light);">
+                        <li>Curator: Nguyễn Thuý Mỵ</li>
+                        <li>SĐT: 0901889199</li>
+                        <li>Địa điểm: Valia Wine Bar, 68 Bùi Viện, Hải Phòng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChériDate. Độc quyền phát triển cho cheridate.vercel.app. Thiết kế bởi Antigravity.</p>
+                <p style="color: var(--gold);">Hải Phòng là không lòng vòng ♡</p>
+            </div>
+        </div>
+    </footer>
 
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    const overlay = document.getElementById('mobileOverlay');
-    if (hamburger) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('open');
-            overlay.classList.toggle('active');
-        });
-        overlay.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('open');
-            overlay.classList.remove('active');
-        });
-    }
+    <!-- Toast container -->
+    <div class="toast-container" id="toast-container"></div>
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-
-    function toggleChat() {
-        const box = document.getElementById('chatBox');
-        const toggle = document.getElementById('chatToggle');
-        box.classList.toggle('open');
-        toggle.style.display = box.classList.contains('open') ? 'none' : 'flex';
-        if (box.classList.contains('open')) {
-            document.getElementById('chatInput').focus();
-        }
-    }
-
-    function sendChat() {
-        const input = document.getElementById('chatInput');
-        const msg = input.value.trim();
-        if (!msg) return;
-
-        addChatMessage(msg, 'user');
-        input.value = '';
-
-        const typing = document.createElement('div');
-        typing.className = 'chat-message bot';
-        typing.id = 'typing';
-        typing.innerHTML = '<div class="chat-bubble"><div class="chat-typing"><span></span><span></span><span></span></div></div>';
-        document.getElementById('chatMessages').appendChild(typing);
-        scrollChat();
-
-        // Since this is a static site without AI backend chat, redirect chat interactions to the form/contact
-        setTimeout(() => {
-            document.getElementById('typing')?.remove();
-            addChatMessage('Xin lỗi, để được hỗ trợ tốt nhất, bạn vui lòng điền thông tin vào form liên hệ của chúng tôi nhé! 🥰', 'bot');
-            
-            // Add a link button inside the chat
-            setTimeout(() => {
-                const div = document.createElement('div');
-                div.className = 'chat-message bot';
-                div.innerHTML = `<div class="chat-bubble" style="background:#ff4d6d;color:white;cursor:pointer;" onclick="window.open('https://forms.gle/fLyC9BnLCd5HSvvK7','_blank')">👉 Điền Form Đăng Ký / Hỗ Trợ</div>`;
-                document.getElementById('chatMessages').appendChild(div);
-                scrollChat();
-            }, 500);
-        }, 1000);
-    }
-
-    function addChatMessage(text, role) {
-        const div = document.createElement('div');
-        div.className = 'chat-message ' + role;
-        div.innerHTML = '<div class="chat-bubble">' + text + '</div>';
-        document.getElementById('chatMessages').appendChild(div);
-        scrollChat();
-    }
-
-    function scrollChat() {
-        const msgs = document.getElementById('chatMessages');
-        msgs.scrollTop = msgs.scrollHeight;
-    }
-
-    document.getElementById('chatInput')?.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') sendChat();
-    });
-    </script>
+    <script src="/static/js/app.js"></script>
 </body>
 </html>
