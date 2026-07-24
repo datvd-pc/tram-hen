@@ -3,7 +3,7 @@
   "redirects": [
     { "source": "/about", "destination": "/#philosophy", "permanent": true },
     { "source": "/events", "destination": "/#events", "permanent": true },
-    { "source": "/members", "destination": "/#register", "permanent": true },
+    { "source": "/members", "destination": "https://forms.gle/2dgsoziexqA7ENkN7", "permanent": true },
     { "source": "/blog", "destination": "/#science", "permanent": true }
   ]
 }
